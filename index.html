@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project X - Multi-Agent AI System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(to bottom, #ffffff, #f3f4f6);
+            color: #000;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            padding: 80px 24px;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 80px 80px;
+            }
+        }
+
+        .max-w-4xl {
+            max-width: 56rem;
+            margin: 0 auto;
+        }
+
+        .max-w-5xl {
+            max-width: 64rem;
+            margin: 0 auto;
+        }
+
+        .max-w-3xl {
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 96px;
+        }
+
+        .intro-section {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            margin-bottom: 24px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3.75rem;
+            }
+        }
+
+        .intro-text {
+            font-size: 1.25rem;
+            color: #374151;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-bottom: 32px;
+            letter-spacing: -0.02em;
+        }
+
+        .grid {
+            display: grid;
+            gap: 32px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .card {
+            padding: 24px;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .card-text {
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .card-desc {
+            color: #4b5563;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .architecture-section p {
+            color: #374151;
+            line-height: 1.625;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 128px;
+            margin-bottom: 80px;
+        }
+
+        .cta-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .cta-text {
+            font-size: 1.125rem;
+            color: #374151;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            padding: 16px 40px;
+            background: #000;
+            color: #fff;
+            border: none;
+            border-radius: 9999px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1f2937;
+        }
+
+        .max-w-2xl {
+            max-width: 42rem;
+            margin: 0 auto;
+        }
+
+        .description-text {
+            font-size: 1.125rem;
+            color: #374151;
+            line-height: 1.625;
+        }
+
+        .line-break {
+            display: block;
+            height: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Intro Section -->
+        <section class="max-w-4xl intro-section">
+            <h1>Explore Project X</h1>
+            <p class="intro-text">
+                Project X is a multi-agent AI system equipped with specialized tools to solve problems,
+                automate workflows, and transform complex tasks into seamless results.
+                Designed for students and everyday users, Project X delivers intelligent assistance
+                with elegance, speed, and precision.
+            </p>
+        </section>
+
+        <!-- Core Abilities -->
+        <section class="max-w-5xl">
+            <h2>Core Abilities</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <p class="card-text">Internet Search</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">PDF & Report Generation</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Task Automation</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Workflow Execution</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">File Generation (Docs, Slides, CSV, etc.)</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Data Extraction</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Email & Message Drafting</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Code Execution</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Multi-step Reasoning</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Planning & Strategy</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Multi-Agent Coordination</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">External API Integration</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agents Section -->
+        <section class="max-w-5xl">
+            <h2>AI Agents Inside Project X</h2>
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3 class="card-title">Research Agent</h3>
+                    <p class="card-desc">Searches, validates, and collects accurate information.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Planner Agent</h3>
+                    <p class="card-desc">Breaks complex tasks into intelligent step-by-step workflows.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Creator / Writer Agent</h3>
+                    <p class="card-desc">Generates content, summaries, messages, and creative output.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Automation / Execution Agent</h3>
+                    <p class="card-desc">Executes actions, automates steps, and completes tasks.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Developer Agent</h3>
+                    <p class="card-desc">Writes, debugs, and executes code when required.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">File / Document Agent</h3>
+                    <p class="card-desc">Creates PDFs, documents, spreadsheets, and reports.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Memory Agent</h3>
+                    <p class="card-desc">Understands context, stores insights, and adapts over time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section class="max-w-5xl">
+            <h2>Use Cases</h2>
+            <div class="grid grid-2">
+                <div class="card">
+                    <p class="card-text">Summarize any topic with verified sources</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Generate detailed PDFs with charts</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Automate content pipelines</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Perform competitive analysis</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools -->
+        <section class="max-w-5xl">
+            <h2>Tools Inside Project X</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <p class="card-text">Web Search Tool</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">File Writer Tool</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">File Reader Tool</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Code Interpreter</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Browser Automation</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">API Calling</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Makes Project X Unique -->
+        <section class="max-w-4xl text-center">
+            <h2>What Makes Project X Unique</h2>
+            <p class="max-w-2xl description-text">
+                Project X stands apart through its multi-agent architecture, where specialized
+                agents collaborate intelligently to achieve outcomes no single model can deliver.
+                It brings together reasoning, automation, creativity, and execution—forming a
+                complete AI system for modern tasks.
+            </p>
+        </section>
+
+        <!-- Architecture Overview -->
+        <section class="max-w-5xl architecture-section">
+            <h2>Architecture Overview</h2>
+            <div class="card">
+                <p>
+                    Project X uses a basic yet powerful multi-agent architecture. Each agent
+                    specializes in a different area—research, planning, creation, execution,
+                    development, memory, and file management.
+                </p>
+                <span class="line-break"></span>
+                <p>
+                    When a user submits a task, the system breaks it down into smaller steps.
+                    The appropriate agents take responsibility for each step and collaborate
+                    to produce the final result. This teamwork enables Project X to deliver
+                    higher accuracy, faster responses, and more reliable outcomes than
+                    single-agent systems.
+                </p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="max-w-3xl cta-section">
+            <h2 class="cta-title">Ready to Experience Project X?</h2>
+            <p class="cta-text">
+                Discover the power of multi-agent intelligence and transform how you work, learn, and create.
+            </p>
+            <button class="btn" onclick="handleGetStarted()">Get Started</button>
+        </section>
+    </div>
+
+    <script>
+        function handleGetStarted() {
+            alert('Welcome to Project X! Start your journey now.');
+        }
+    </script>
+</body>
+</html>
